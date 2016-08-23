@@ -1,0 +1,25 @@
+from: mhart/alpine-node:6.2
+services:
+  - lphoward/fake-s3:latest:
+      name: aws-fake-s3
+      persist: false
+      expose:
+        - 443:443
+        - 4567:4567
+        - 4569:4569
+      exec: sleep 7
+expose:
+  - 2000:2000
+volumes:
+  - /tmp:/fakes3_root
+env:
+  - LOCAL_HOME=${HOME}
+hosts:
+   FakeS3.aws-fake-s3: 127.0.0.1
+   s3.amazonaws.com: 127.0.0.1
+quiet: false
+forward: true
+tasks:
+  env: env
+  install: npm install
+  start: npm start

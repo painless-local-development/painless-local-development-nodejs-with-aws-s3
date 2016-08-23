@@ -1,0 +1,33 @@
+{
+  "name": "painless-local-development-nodejs-with-s3",
+  "version": "1.0.0",
+  "description": "A minimalistic repo to show how to develop locally with S3",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pelirrojo@github.com/painless-local-development/painless-local-development-nodejs-with-aws-dynamodb.git"
+  },
+  "keywords": [
+    "node.js",
+    "Docker",
+    "S3",
+    "DevLab",
+    "Painless",
+    "Local",
+    "Development"
+  ],
+  "author": "Pelirrojo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/painless-local-development/painless-local-development-nodejs-with-aws-dynamodb/issues"
+  },
+  "homepage": "https://github.com/painless-local-development/painless-local-development-nodejs-with-aws-dynamodb#readme"
+}
